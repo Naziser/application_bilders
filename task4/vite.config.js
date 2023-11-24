@@ -1,5 +1,5 @@
 export default {
-    root: './src',
+    root: './',
     name: 'task4',
     outDir: 'dist',
     base: '/',
@@ -13,6 +13,11 @@ export default {
       },
     },
     build: {
+      rollupOptions: {
+        input: {
+          main: './src/index.html',
+        },
+      },
       minify: 'terser',
       lib: false
     },
