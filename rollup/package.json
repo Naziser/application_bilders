@@ -1,0 +1,17 @@
+{
+  "name": "task7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@web/rollup-plugin-html": "^2.1.2",
+    "rollup": "^4.6.0"
+  }
+}
