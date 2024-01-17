@@ -1,24 +1,24 @@
 export default {
-    root: './',
-    name: 'task4',
-    outDir: 'dist',
-    base: '/',
-    server: {
-      port: 3001,
-      open: false,
+  root: "./",
+  name: "task4",
+  outDir: "dist",
+  base: "./",
+  server: {
+    port: 3001,
+    open: false,
+  },
+  resolve: {
+    alias: {
+      "@": "src",
     },
-    resolve: {
-      alias: {
-        '@': '/src',
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: "./src/index.html",
       },
     },
-    build: {
-      rollupOptions: {
-        input: {
-          main: './src/index.html',
-        },
-      },
-      minify: 'terser',
-      lib: false
-    },
-  };
+    minify: "terser",
+    lib: false,
+  },
+};

@@ -1,4 +1,5 @@
 import { hello } from "./hello";
+import './index.css';
 
 const rootApp = document.getElementById("app");
 const elementChild = document.createElement("div");
